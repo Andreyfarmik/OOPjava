@@ -1,0 +1,27 @@
+package Tree;
+
+public class Human {
+    private String gender;
+    private String name;
+
+    Human(String gender, String name) {
+        this.gender = gender;
+        this.name = name;
+    }
+    public String getGender() {
+        return gender;
+    }
+    public String getMother() {
+        return name;
+    }
+
+
+    @Override
+    public String toString() {
+        //return "Пол:  " + gender + " " + "Имя:  " + name + " " + "Мать:  " + mother + " " + "Отец:  " + father;
+        return "Пол:  " + gender + " " + "Имя:  " + name;
+    }
+    public String getName() {
+        return name;
+    }
+}
