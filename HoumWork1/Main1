@@ -1,0 +1,18 @@
+package Tree;
+
+public class Main1 {
+    public static void main(String[] args){
+        Communication human1 = new Communication("Мужской","Валерий", "Нина","Иван");
+        Communication human2 = new Communication("Женский","Марина", "Татьяна","Игорь");
+        Communication human3 = new Communication("Мужской","Виталий", "Ирина","Петр");
+        Communication human4 = new Communication("Мужской","Николай", "Александра","Олег");
+
+        FamilyTree familyTree = new FamilyTree();
+        familyTree.addHuman(human1);
+        familyTree.addHuman(human2);
+        familyTree.addHuman(human3);
+        familyTree.addHuman(human4);
+        System.out.println(familyTree.getInfo());
+        System.out.println(familyTree.scrHuman("Валерий"));
+    }
+}
