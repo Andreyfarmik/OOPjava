@@ -22,10 +22,10 @@ public class FamilyTree {
         }
         return stringBuilder.toString();
     }
-    public Human scrHuman(String name){
+    public Communication scrHuman(String name){
         for(Human human: humanList){
-            if (human.getName().equals(name)){
-                return human;
+            if (Human.getName().equals(name)){
+                return (Communication) human;
             }
         }
         return null;
