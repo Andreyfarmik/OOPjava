@@ -1,16 +1,15 @@
 package Tree;
 
 public class Communication extends Human {
-    private String mother;
-    private String father;
+
 
     Communication(String gender, String name, String mother, String father) {
-        super(gender, name);
-        this.mother = mother;
-        this.father = father;
+        super(gender, name, mother, father);
     }
+
+
     @Override
     public String toString() {
-        return super.toString() + " " + "Мать:  " + mother + " " + "Отец:  " + father;
+        return super.toString() + " " + "Мать:  " + getMother() + " " + "Отец:  " + getFather();
     }
 }
