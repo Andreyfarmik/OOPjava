@@ -2,10 +2,10 @@ package Tree;
 
 public class Main1 {
     public static void main(String[] args){
-        Communication human1 = new Communication("Мужской","Валерий", "Нина","Иван");
-        Communication human2 = new Communication("Женский","Марина", "Татьяна","Игорь");
-        Communication human3 = new Communication("Мужской","Виталий", "Ирина","Петр");
-        Communication human4 = new Communication("Мужской","Николай", "Александра","Олег");
+        Human human1 = new Human("Мужской","Валерий", "Нина","Иван");
+        Human human2 = new Human("Женский","Марина", "Татьяна","Игорь");
+        Human human3 = new Human("Мужской","Виталий", "Ирина","Петр");
+        Human human4 = new Human("Мужской","Николай", "Александра","Олег");
 
         FamilyTree familyTree = new FamilyTree();
         familyTree.addHuman(human1);
